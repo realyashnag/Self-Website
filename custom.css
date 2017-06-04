@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i");
+@import url('https://fonts.googleapis.com/css?family=Vibur');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+/* Fading */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {        /* Firefox < 16 */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {     /* Safari, Chrome and Opera > 12.1 */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {         /* Internet Explorer */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {          /* Opera < 12.1 */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Main */
+
+body {
+    padding-top: 50px;
+    /*background-image: url("../images/Textures/asdf (2).jpg");*/
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 1s;   /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.container {
+    padding-top: 3px;
+}
+
+htitle {
+    font-family: 'Tangerine', cursive;
+    /*font-family: 'Barrio', cursive;
+    font-family: 'Old London Alternate';*/
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Item Contents */
+
+.item_content img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
+    width: 560px;
+    height: 370px;
+}
+
+.item_content:hover img {
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.08);
+}
+
+.item_content p {
+    font-family: 'Vibur', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: grey;
+}
+
+.item_content h1 {
+    font-family: 'Vibur', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item_content a {
+    color: black;
+    margin: auto;
+}
+
+/* About */
+
+.about {
+    background-image: url("../images/Textures/asdf (2).jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.about img {
+    text-align: center;
+    /*margin-left: 110px;
+    width: 200px;
+    height: 200px;*/
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    display: block;
+    width: 65%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.about .row {
+    padding-top: 3vh;
+}
+
+.about p {
+    color: #D5DBDB;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    font-style: italic;
+    display: inline;
+}
+
+.about p:first-child:first-letter {
+    font-size: 40px;
+}
+
+.about h1 {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    display: inline;
+    margin-left: 1px;
+}
+
+.about h2 {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 35px;
+    font-style: italic;
+    margin-left: 1px;
+}
+
+.about .more {
+    background-image: url("../images/Textures/07.jpg");
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.footer h1 {
+    font-size: 100%;
+    font-family: 'Vibur', cursive;
+    font-weight: lighter;
+    color: grey;
+}
+
+.footer h2 {
+    font-size: 50%;
+}
+
+.footer .social {
+    padding: 20px;
+    font-size: 5vw;
+    width: 70vw;
+    margin: auto;
+
+    /* Centralise */
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ion-social-youtube-outline,
+.ion-social-googleplus-outline,
+.ion-social-github-outline,
+.ion-social-linkedin-outline,
+.ion-social-instagram-outline {
+  color: grey
+}
+
+.ion-social-youtube-outline,
+.ion-social-googleplus-outline,
+.ion-social-github-outline,
+.ion-social-linkedin-outline,
+.ion-social-instagram-outline {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  text-align: center;
+  color: grey
+}
+
+.ion-social-youtube-outline:hover {
+    color: white
+    /*#dd4b39*/
+}
+.ion-social-googleplus-outline:hover {
+    color: white
+    /*#dd4b39*/
+}
+.ion-social-github-outline:hover {
+    color: white
+    /*#117A65*/
+}
+.ion-social-linkedin-outline:hover {
+    color: white
+    /*#007bb5*/
+}
+.ion-social-instagram-outline:hover {
+    color: white
+    /*#884EA0*/
+}
