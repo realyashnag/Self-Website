@@ -199,16 +199,9 @@ htitle {
 .ion-social-github-outline,
 .ion-social-linkedin-outline,
 .ion-social-instagram-outline {
-  color: grey
-}
-
-.ion-social-youtube-outline,
-.ion-social-googleplus-outline,
-.ion-social-github-outline,
-.ion-social-linkedin-outline,
-.ion-social-instagram-outline {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  font-size: 10vmin;
   text-align: center;
   color: grey
 }
