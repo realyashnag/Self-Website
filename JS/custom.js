@@ -7,7 +7,6 @@ do
     $("#moonwalk").css("margin-left",lm+"px");
 } while (lm < 100);*/
 
-
 //Smooth Scolling
 $('a[href*=\\#]').on('click', function(event) {
     event.preventDefault();
@@ -16,7 +15,6 @@ $('a[href*=\\#]').on('click', function(event) {
 
 //Slide Animation
 $(document).ready(function(){
-
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
