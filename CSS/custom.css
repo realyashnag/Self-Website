@@ -156,17 +156,12 @@ h1 {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
-.item img {
-    height: 10px;
-    background-size: contain;
-    -webkit-transition: all 0.3s ease-in;
-}
-
 .thumbnail a>img, .thumbnail>img {
     display: block;
     height: 30vh;
-    width: 25vw;
+    width: 100%;
     background-size: contain;
+    -webkit-transition: all 0.3s ease-in;
 }
 
 .item:hover img {
