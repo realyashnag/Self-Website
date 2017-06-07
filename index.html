@@ -15,161 +15,194 @@
     <link rel="stylesheet" href="CSS/custom.css">
 </head>
 
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <!--span class="glyphicon glyphicon-fire"><!/span-->
-                    <htitle>&nbsp;Yash Nag</htitle>
-                </a>
+    <section id="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home"><i class="ion-network" style="font-size: 30px; color:black;"></i></a>
+                    <a class="navbar-brand" href="#home">Yash Nag</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Explore</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="#explore">Explore</a> </li>
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#connect">Connect</a> </li>
-                </ul>
-            </div>  <!-- /.navbar-collapse -->
-        </div>  <!-- /.container -->
-    </nav> <br>
+        </nav><br>
+    </section>
+
 
     <!-- Content -->
-    <div class="container" id="explore">
-        <!-- Projects Row 1/2 -->
-        <div class="row">
-            <div class="col-md-6 explore-item">
-                <div class="item_content">
-                    <a href="SUBS/programming/index.html">
-                        <img class="img-thumbnail" src="Images/programming.jpg"> <!-- Default :  560, 370 -->
-                    </a>
-                    <h1><a href="SUBS/programming/index.html">Programming</a></h1>
-                    <p>Development Projects and Competetive Programming Solutions</p>
+    <section id="explore">
+        <div class="container-fluid text-center bg-grey">
+            <h1>Everything I do</h1><br>
+            <div class="row text-center">
+                <!--img id="moonwalk" src="moonwalk.gif" style="margin-right: 0px"-->
+                <div class="col-sm-3">
+                    <div class="thumbnail item">
+                        <a href="SUBS/programming/index.html"><img src="images/programming.jpg"></a>
+                        <a href="SUBS/programming/index.html"><h1><strong>Programming</strong></p></h1></a>
+                        <p>Development Projects and Competetive Programming Solutions</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 explore-item">
-                <div class="item_content">
-                    <a href="SUBS/music/index.html">
-                        <img class="img-thumbnail" src="Images/music.jpg">
-                    </a>
-                    <h1><a href="SUBS/music/index.html">Music</a></h1>
-                    <p>Original Instrumental Compositions and Covers</p>
+                <div class="col-sm-3">
+                    <div class="thumbnail item">
+                        <a href="SUBS/music/index.html"><img src="images/music.jpg"></a>
+                        <a href="SUBS/music/index.html"><h1><strong>Music</strong></p></h1></a>
+                        <p>Original Instrumental Compositions and Covers</p>
+                    </div>
                 </div>
-            </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail item">
+                        <a href="SUBS/product_reviews/index.html"><img src="Images/product_reviews.jpg"></a>
+                        <a href="SUBS/product_reviews/index.html"><h1><strong>Product Reviews</strong></p></h1></a>
+                        <p>Self Analysis and Overall Experience of Hardware & Software Technology</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail item">
+                        <a href="SUBS/vision/index.html"><img src="Images/vision.jpg"></a>
+                        <a href="SUBS/vision/index.html"><h1><strong>Vision</strong></p></h1></a>
+                        <p>Speaking My Mind About The World We Live In</p>
+                    </div>
+                </div>
+            </div><br>
         </div>
-        <!-- /row -->
+    </section>
+    <img id="lnmiit" src="Images/lnmiit.jpg">
 
-        <!-- Projects Row 2/2 -->
-        <div class="row">
-            <div class="col-md-6 explore-item">
-                <div class="item_content">
-                    <a href="SUBS\product_reviews/index.html">
-                        <img class="img-thumbnail" src="Images/product_reviews.jpg">
-                    </a>
-                    <h1><a href="SUBS/product_reviews/index.html">Product Reviews</a></h1>
-                    <p>Self Analysis and Overall Experience of Hardware & Software Technology</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 explore-item">
-                <div class="item_content">
-                    <a href="SUBS/vision/index.html">
-                        <img class="img-thumbnail" src="Images/vision.jpg">
-                    </a>
-                    <h1><a href="SUBS/vision/index.html">Vision</a></h1>
-                    <p>Speaking My Mind About The World We Live In</p>
-                </div>
-            </div>
-        </div>  <br>
-
-        <!-- /.row -->
-    </div>
 
     <!-- About -->
-    <div class="about" id="about">
-        <div class="container">
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-circle" src="Images/yash2.jpg">
+    <section id="about">
+        <div class="about">
+            <div class="container"><br>
+                <div class="row slideanim">
+                    <div class="col-md-4">
+                        <img class="img-circle" src="Images/yash3.gif">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Hi. I'm a stupid, obnoxious weird person who likes laptops more than Humans. I like coding and developing softwares in general. The harder it gets, the more fun it is. I like solving competitive problems too though. That's how I started. That's what actually got me interested in Programming at the first place.</p>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <p>Hi. I'm stupid, obnoxious weird person who likes laptops more than Humans. I like coding and developing softwares in general. The harder it gets, the more fun it is. I like solving competitive problems too though. That's how I started. That's what actually got me interested in Programming at the first place.</p>
+
+                <div class="row slideanim">
+                    <p>This is just me blabbering about how cool I am for like 2-3 lines just so that this text looks cool in the "about" section. I want this to be the 'pre' of footer which basically just contains my social media links. Btw, how awesome is Rick and Morty right? Like freakin' amazing writing and stuff. So someone who is gonna see this, might be able to justify why I literally made an entire section for my own thoughs 'Vision'; since once I start typing, it's difficult for me to stop.</p>
+                </div><br>
+            </div><br>
+            <div class="container bio">
+                <div class="row">
+                    <div class="col-md-4">
+                        <br><i class="ion-university"></i>
+                    </div>
+                    <div class="col-md-8 slideanim"><br>
+                        <a href="http://www.lnmiit.ac.in/"><h2>The LNM Institute of Information Technology</h2></a><br>
+                        <p>Pursuing Bachelor of Technology (B.Tech) in Computer Science</p>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-md-4" >
+                        <br><br><br><br><i class="ion-code"></i>
+                    </div><br>
+                    <div class="col-md-8 slideanim">
+                        <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
+                        <h2><ul>
+                            <li>Python</li>
+                            <li>HTML & CSS</li>
+                            <li>C</li>
+                            <li>Javascript</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                        </ul></h2>
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <br><br><i class="ion-code-working"></i>
+                    </div>
+                    <div class="col-md-8 slideanim"><br>
+                        <h2><ul>
+                            <li>Convolutional & Recurring Neural Network (TensorFlow)</li>
+                            <li>Responsive Web Dev (AngularJS)</li>
+                            <li>Data Analytics (NumPy, SciPy, MatPlotLib)</li>
+                        </ul></h2>
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <br><br><i class="ion-merge"></i>
+                    </div>
+                    <div class="col-md-8 slideanim">
+                        <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
+                        <h2>
+                            <ul>
+                                <li>Guitar</li>
+                                <li>Counter Strike GO</li>
+                                <li>Football</li>
+                                <li>Driving around aimlessly</li>
+                            </ul>
+                        </h2>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Connect -->
+    <section id="connect">
+        <div class="footer">
+            <div class="container-fluid bg-grey contact">
+                <h1>let me bore you more!</h1><br>
+                <div class="row slideanim">
+                    <div class="col-sm-5">
+                    <p><span class="ion-ios-location"></span> Jaipur, India </p><br>
+                    <p><span class="ion-email"></span> hsayganalpha@gmail.com </p>
+                    </div>
+                    <div class="col-sm-7 slideanim">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Regina Felange" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="reginaisnotphoebe@yahoo.com" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Hi Yash, This is Regina Felange. This is regarding a very important international business meeting. Kindly get back to me at your earliest!" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default" type="submit">Send</button>
+                            </div>
+                        </div><br>
+                    </div>
+                    <button type="button" class="btn btn-default" style="background-color: #f6f6f6"><p style="font-size: 125%">Download Resume</p></button><br><br>
+                    <a href="#home" title="To The Top" color="black"><i class="ion-chevron-up"></i></a>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12"> <br>
-                    <p> This is just me blabbering about how cool I am for like 2-3 lines just so that this text looks cool in the "about" section. I want this to be the 'pre' of footer which basically just contains my social media links. Btw, how awesome is Rick and Morty right? Like freakin' amazing writing and stuff. So someone who is gonna see this, might be able to justify why I literally made an entire section for my own thoughs 'Vision'; since once I start typing, it's difficult for me to stop.
-                    </p>
-                </div>
-            </div> <br> <br>
-
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2">
-                    <i class="ion-university" style="font-size: 80px; color:white;"></i>
-                </div>
-                <div class="col-md-8">
-                    <br>
-                    <h2> <a href="http://www.lnmiit.ac.in/" style="color:white">The LNM Institute of Information Technology</a></h2>
-                    <br>
-                    <p> Pursuing Bachelor in Technology (B.Tech) in Computer Science.</p>
-                </div>
-            </div> <br>
-
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2">
-                    <i class="ion-code" style="font-size: 80px; color:white;"></i>
-                </div>
-                <div class="col-md-8">
-                    <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
-                    <br>
-                    <p> C, C++, Java, Python
-                        <br> HTML &amp; CSS, Javascript </p>
-                    <br>
-                </div>
-            </div> <br>
-
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2">
-                    <i class="ion-merge" style="font-size: 80px; color:white;"></i>
-                </div>
-                <div class="col-md-8">
-                    <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
-                    <p> Guitar, Computer Games <br> Football, Roaming around in my car aimlessly </p>
-                </div>
-            </div> <br>
-
-
+            <div class="container-fluid bg-grey social">
+                <a href="https://plus.google.com/u/1/108878285666575196198" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
+                <a href="https://www.instagram.com/hsay_gan" target="_blank"><i class="ion-social-instagram-outline"></i></a>
+                <a href="https://www.youtube.com/channel/UCjbLnCfwMxo7XKMAyHjmPQw" target="_blank"><i class="ion-social-youtube-outline"></i></a>
+                <a href="https://github.com/hsaygan" target="_blank"><i class="ion-social-github-outline"></i></a>
+                <a href="https://www.linkedin.com/in/yash-nag-518684130" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
+            </div>
+            <p> Designed and Created by Yash Nag &nbsp; | &nbsp;  Jai Hind, Am I Right? </p>
         </div>
-    </div>
-
-    <!-- Footer -->
-
-    <div class="footer" id="connect">
-        <h1> let me bore you more! </h1>
-        <div class="social">
-            <a href="https://plus.google.com/u/1/108878285666575196198" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
-            <a href="https://www.instagram.com/hsay_gan" target="_blank"><i class="ion-social-instagram-outline"></i></a>
-            <a href="https://www.youtube.com/channel/UCjbLnCfwMxo7XKMAyHjmPQw" target="_blank"><i class="ion-social-youtube-outline"></i></a>
-            <a href="https://github.com/hsaygan" target="_blank"><i class="ion-social-github-outline"></i></a>
-            <a href="https://www.linkedin.com/in/yash-nag-518684130" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
-        </div>
-        <h2> Designed and Created by Yash Nag &nbsp; | &nbsp;  Jai Hind, am i right? </h1>
-    </div>
+    </section>
 
     <!-- Javascript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
