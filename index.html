@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myWebsiteApp">
 
 <head>
     <!-- Initialisations -->
@@ -10,15 +10,21 @@
     <title>Yash Nag</title>
 
     <!-- Cascade Style Sheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"; href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="src/css/custom.css">
 </head>
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body ng-controller="bodyController as ctrl" ng-cloak>
+    <div>
+    </div>
+</body>
 
-
-    <!-- Navigation -->
+    
+<!--<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
     <section id="navigation">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -42,54 +48,49 @@
         </nav><br>
     </section>
 
-
-    <!-- Content -->
     <section id="explore">
         <div class="container-fluid text-center bg-grey">
             <h1>Everything I do</h1><br>
             <div class="row text-center">
-                <!--img id="moonwalk" src="moonwalk.gif" style="margin-right: 0px"-->
                 <div class="col-sm-3">
                     <div class="thumbnail item">
-                        <a href="SUBS/programming/index.html"><img src="Images/programming.jpg"></a>
-                        <a href="SUBS/programming/index.html"><h1><strong>Programming</strong></p></h1></a>
+                        <a href="SUBS/programming/index.html"><img src="src/images/programming.jpg"></a>
+                        <a href="SUBS/programming/index.html"><h1><strong>Programming</strong></h1></a>
                         <p>Development Projects and Competetive Programming Solutions</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumbnail item">
-                        <a href="SUBS/music/index.html"><img src="Images/music.jpg"></a>
-                        <a href="SUBS/music/index.html"><h1><strong>Music</strong></p></h1></a>
+                        <a href="SUBS/music/index.html"><img src="src/images/music.jpg"></a>
+                        <a href="SUBS/music/index.html"><h1><strong>Music</strong></h1></a>
                         <p>Original Instrumental Compositions and Covers</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumbnail item">
-                        <a href="SUBS/product_reviews/index.html"><img src="Images/product_reviews.jpg"></a>
-                        <a href="SUBS/product_reviews/index.html"><h1><strong>Product Reviews</strong></p></h1></a>
+                        <a href="SUBS/product_reviews/index.html"><img src="src/images/product_reviews.jpg"></a>
+                        <a href="SUBS/product_reviews/index.html"><h1><strong>Product Reviews</strong></h1></a>
                         <p>Self Analysis and Overall Experience of Hardware & Software Technology</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumbnail item">
-                        <a href="SUBS/vision/index.html"><img src="Images/vision.jpg"></a>
-                        <a href="SUBS/vision/index.html"><h1><strong>Vision</strong></p></h1></a>
+                        <a href="SUBS/vision/index.html"><img src="src/images/vision.jpg"></a>
+                        <a href="SUBS/vision/index.html"><h1><strong>Vision</strong></h1></a>
                         <p>Speaking My Mind About The World We Live In</p>
                     </div>
                 </div>
             </div><br>
         </div>
     </section>
-    <img id="lnmiit" src="Images/lnmiit.jpg">
+    <img id="lnmiit" src="src/images/lnmiit.jpg">
 
-
-    <!-- About -->
     <section id="about">
         <div class="about">
             <div class="container"><br>
                 <div class="row slideanim">
                     <div class="col-md-4">
-                        <img class="img-circle" src="Images/yash3.gif">
+                        <img class="img-circle" src="src/images/yash3.gif">
                     </div>
                     <div class="col-md-8">
                         <p>Hi. I'm a stupid, obnoxious weird person who likes laptops more than Humans. I like coding and developing softwares in general. The harder it gets, the more fun it is. I like solving competitive problems too though. That's how I started. That's what actually got me interested in Programming at the first place.</p>
@@ -116,7 +117,6 @@
                         <br><br><br><br><i class="ion-code"></i>
                     </div><br>
                     <div class="col-md-8 slideanim">
-                        <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
                         <h2><ul>
                             <li>Python</li>
                             <li>HTML & CSS</li>
@@ -146,7 +146,6 @@
                         <br><br><i class="ion-merge"></i>
                     </div>
                     <div class="col-md-8 slideanim">
-                        <!--i class="ion-code-working & download" style="color: grey; font-size: 34px; display: inline;"-->
                         <h2>
                             <ul>
                                 <li>Guitar</li>
@@ -161,8 +160,6 @@
         </div>
     </section>
 
-
-    <!-- Connect -->
     <section id="connect">
         <div class="footer">
             <div class="container-fluid bg-grey contact">
@@ -170,7 +167,7 @@
                 <div class="row slideanim">
                     <div class="col-sm-5">
                     <p><span class="ion-ios-location"></span> Jaipur, India </p><br>
-                    <p><span class="ion-email"></span> hsayganalpha@gmail.com </p>
+                    <p><span class="ion-email"></span> realyashnag@gmail.com </p>
                     </div>
                     <div class="col-sm-7 slideanim">
                         <div class="row">
@@ -203,10 +200,13 @@
             <p> Designed and Created by Yash Nag &nbsp; | &nbsp;  Jai Hind, Am I Right? </p>
         </div>
     </section>
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="JS/custom.js"></script>
-</body>
+</body>-->
+    
+<!--    Javascript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="src/js/app.js"></script>
 </html>
