@@ -1,2 +1,8 @@
-# Self-Website
-A responsive front end project, serving as a resume and compiled organisation of all the things I do.
+# My Website
+
+www.yashnag.me
+
+<a
+href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara" target="_blank">
+Theme by LekoArts
+</a>
