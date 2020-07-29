@@ -66,11 +66,11 @@
         "theme-ui": "^0.3.1"
     },
     "bugs": {
-        "url": "https://github.com/realyashnag/realyashnag.github.io/issues"
+        "url": "https://github.com/realyashnag/Self-Website/issues"
     },
     "homepage": "https://www.yashnag.me",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/realyashnag/realyashnag.github.io.git"
+        "url": "https://github.com/realyashnag/Self-Website"
     }
 }
